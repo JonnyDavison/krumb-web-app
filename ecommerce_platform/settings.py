@@ -106,6 +106,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # DATABASE
 
+# Replace the DATABASES section of your settings.py with this
 tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
 
 DATABASES = {
@@ -118,7 +119,6 @@ DATABASES = {
         'PORT': 5432,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
